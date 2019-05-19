@@ -1,17 +1,26 @@
 package main;
 
-public abstract class Book {
+import java.util.Date;
+import java.util.List;
 
-    private String isbn;
-    private MediaType mediaType;
+public class Book {
+
     private long bookID;
+    private String isbn;
+    private Division division;
+    private MediaType mediaType;
     private Language language;
     private String title;
     private BookStatus status;
     private List<Author> authors;
-    private HoldingCode holdingCode; // apx 16; could use enum
-//    prefix; classification; cutter
+    private List<String> subjects;
+    private HoldingCode holdingCode;
     private double price;
+    private Date publicationDate;
+    private Date purchaseDate;
+    boolean isReference;
+    private String owner;
+
 
 
 }
